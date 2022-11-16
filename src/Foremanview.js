@@ -1,5 +1,6 @@
 import React from "react";
 import ForemanCoolComplaint from "./Components/Foreman/ForemanCoolComplaint";
+import ForemTailComponent from "./Components/Foreman/ForemTailComponent";
 
 import "./foreman.css";
 
@@ -458,6 +459,8 @@ function Foremanview() {
           </table>
         </div>
       <ForemanCoolComplaint/>
+      <ForemTailComponent/>
+      
       </div>
       {/* <div className="Break_cool_unit">
       <h2 >Breakdown Analysis For Cooling Unit</h2>

@@ -1021,4 +1021,14 @@ background-color:  rgb(237, 242, 242);
 
 
 
-
+.dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+    position: relative;
+    border: none;
+    height: 34px;
+    width: 431px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 245, 231);
+    border-radius: 0.5rem;
+}

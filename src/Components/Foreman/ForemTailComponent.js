@@ -1,29 +1,28 @@
 import React from "react";
 import { Button, Col, Container, Row, Form } from "react-bootstrap";
 
-function ForemanCoolComplaint({ complaint, failure, coolComponent }) {
-  const options = [
-    {
-      label: "Send Report to Foremen",
-      value: "Send Report to Foremen",
-    },
-    {
-      label: "Shabbir",
-      value: "Shabbir",
-    },
-    {
-      label: "Hafizullah",
-      value: "Hafizullah",
-    },
-    {
-      label: "Faisal",
-      value: "Assigned to Foreman - Faisal",
-    },
-  ];
+function ForemTailComponent({ complaint, failure, coolComponent }) {
+    const options = [
+        {
+          label: "Send Report to Foremen",
+          value: "Send Report to Foremen",
+        },
+        {
+          label: "Shabbir",
+          value: "Shabbir",
+        },
+        {
+          label: "Hafizullah",
+          value: "Hafizullah",
+        },
+        {
+          label: "Faisal",
+          value: "Assigned to Foreman - Faisal",
+        },
+      ];
 
   return (
-
-    <div className="tw0_page_complaint" style={{height: "30%"}}>
+    <div className="tw0_page_complaint" style={{ height: "50%" }}>
       <div className="heading">
         <Col>
           <Row>
@@ -37,7 +36,7 @@ function ForemanCoolComplaint({ complaint, failure, coolComponent }) {
                     style={{
                       border: "none",
                       backgroundColor: "rgb(226,245,231)",
-                      paddingLeft: "33px"
+                      paddingLeft: "33px",
                     }}
                   >
                     <option hidden value="">
@@ -71,7 +70,7 @@ function ForemanCoolComplaint({ complaint, failure, coolComponent }) {
           <th className="custom_tab4"> Suggested Rectifiction</th>
         </tr>
         <tr className="custom_tab5">
-          <td>{coolComponent}</td>
+          <td></td>
           <td> Unit Service</td>
           <td>Derive belt expand</td>
           <td>Belt Replacement</td>
@@ -79,16 +78,16 @@ function ForemanCoolComplaint({ complaint, failure, coolComponent }) {
       </table>
 
       {/* <div className="complaint_failure">
-          <div className="complaint"></div>
-          <div className="failure"></div>
-        </div>
+        <div className="complaint"></div>
+        <div className="failure"></div>
       </div>
+    </div>
 
-      <div className="page_two_bothcomp_fail_list">
-        <div className="comp_list"></div> */}
+    <div className="page_two_bothcomp_fail_list">
+      <div className="comp_list"></div> */}
       {/* <div className="fail_list"></div> */}
     </div>
   );
 }
 
-export default ForemanCoolComplaint;
+export default ForemTailComponent;
